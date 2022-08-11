@@ -44,13 +44,10 @@ int main()
 
                 wordLength = strlen(word);
 
-                if (isValid(word, wordLength) == false)
-                {
-
-                    printf("This is not a valid identifier\n");
-                }
-                else
+                if (isValid(word, wordLength) == true)
                     printf("This is a valid identifier\n");
+                else
+                    printf("This is not a valid identifier\n");
             }
             fclose(file); // Closes the file
         }
